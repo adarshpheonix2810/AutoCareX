@@ -1,0 +1,637 @@
+/*--------------------------------------------------------------
+# Faq One
+--------------------------------------------------------------*/
+.faq-one {
+    position: relative;
+    display: block;
+    counter-reset: count;
+    padding: 90px 0 120px;
+    z-index: 1;
+}
+
+.faq-one__inner-content {
+    position: relative;
+    display: block;
+}
+
+.faq-one .faq-one-accrodion .accrodion {
+    position: relative;
+    display: block;
+    border: 1px solid var(--AutoCareX-black);
+    background: var(--AutoCareX-white);
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.faq-one .faq-one-accrodion .accrodion.active {
+    border: 1px solid transparent;
+}
+
+.faq-one .faq-one-accrodion .accrodion-title {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 30px 85px 30px;
+    padding-right: 40px;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.faq-one .faq-one__accrodion-title-count {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+}
+
+.faq-one .faq-one__accrodion-title-count:before {
+    position: relative;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    color: var(--AutoCareX-black);
+    counter-increment: count;
+    content: "0"counter(count);
+    font-family: var(--AutoCareX-font-two);
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.faq-one .faq-one__accrodion-title-count::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    right: -4px;
+    height: 2px;
+    width: 2px;
+    background-color: var(--AutoCareX-black);
+}
+
+.faq-one .faq-one-accrodion .accrodion-title h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--AutoCareX-black);
+    position: relative;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.faq-one .faq-one-accrodion .accrodion+.accrodion {
+    margin-top: 20px;
+}
+
+.faq-one .faq-one-accrodion .accrodion-title h4::before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--AutoCareX-gray);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    line-height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background-color: #F4F4F4;
+}
+
+.faq-one .faq-one-accrodion .accrodion.active .accrodion-title h4::before {
+    content: "\f107";
+    color: var(--AutoCareX-black);
+    background-color: transparent;
+    border: 1px solid var(--AutoCareX-base);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-one .faq-one-accrodion .accrodion-content {
+    position: relative;
+    padding-bottom: 28px;
+    margin-top: -10px;
+    padding-left: 85px;
+    padding-right: 40px;
+    border-bottom: 3px solid var(--AutoCareX-black);
+    border-radius: 20px;
+}
+
+.faq-one .faq-one-accrodion .accrodion-content p {
+    margin: 0;
+}
+
+/*--------------------------------------------------------------
+# Faq Two 
+--------------------------------------------------------------*/
+.faq-two {
+    position: relative;
+    display: block;
+    counter-reset: count;
+    padding: 90px 0px 0px;
+    z-index: 1;
+}
+
+.faq-two__wrap {
+    position: relative;
+    display: block;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto 0;
+    padding: 120px 15px 0;
+    border-radius: 40px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.faq-two__shape-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 65px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.faq-two__wrap:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 65px;
+    left: 0;
+    right: 0;
+    background-color: var(--AutoCareX-black);
+    border-radius: 40px;
+    z-index: -1;
+}
+
+.faq-two__left {
+    position: relative;
+    display: block;
+    margin-top: 11px;
+}
+
+.faq-two__title {
+    font-size: 45px;
+    line-height: 55px;
+    color: var(--AutoCareX-white);
+    font-weight: 600;
+    margin-bottom: 28px;
+}
+
+.faq-two__left .faq-one-accrodion .accrodion {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid rgba(var(--AutoCareX-white-rgb), .20);
+    background: transparent;
+    border-radius: 0;
+    overflow: hidden;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.faq-two__left .faq-one-accrodion .accrodion-title {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 27px 50px 27px;
+    padding-right: 0;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.faq-two__left .faq-two__accrodion-title-count {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.faq-two__left .faq-two__accrodion-title-count:before {
+    position: relative;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 600;
+    color: var(--AutoCareX-white);
+    counter-increment: count;
+    content: "0"counter(count);
+    font-family: var(--AutoCareX-font-two);
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.faq-two__left .faq-two__accrodion-title-count::after {
+    content: "";
+    position: absolute;
+    bottom: 7px;
+    right: -4px;
+    height: 2px;
+    width: 2px;
+    background-color: var(--AutoCareX-white);
+}
+
+.faq-two__left .faq-one-accrodion .accrodion-title h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--AutoCareX-white);
+    position: relative;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.faq-two__left .faq-one-accrodion .accrodion+.accrodion {
+    margin-top: 0px;
+}
+
+.faq-two__left .faq-one-accrodion .accrodion-title h4::before {
+    content: "\e91f";
+    font-family: 'icomoon' !important;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--AutoCareX-base);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    line-height: 14px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: #232323;
+}
+
+.faq-two__left .faq-one-accrodion .accrodion.active .accrodion-title h4::before {
+    content: "\e91a";
+    color: var(--AutoCareX-white);
+    background-color: var(--AutoCareX-base);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-two__left .faq-one-accrodion .accrodion-content {
+    position: relative;
+    padding-bottom: 29px;
+    margin-top: -10px;
+    padding-left: 50px;
+    padding-right: 40px;
+}
+
+.faq-two__left .faq-one-accrodion .accrodion-content p {
+    margin: 0;
+    color: var(--AutoCareX-white);
+}
+
+.faq-two__right {
+    position: relative;
+    display: block;
+}
+
+.faq-two__form {
+    position: relative;
+    display: block;
+    padding: 40px 40px 40px;
+    background-color: var(--AutoCareX-white);
+    border-radius: 20px;
+}
+
+.faq-two__form-title {
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+    margin-bottom: 36px;
+}
+
+.faq-two__input-box {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.faq-two__input-box input[type="text"],
+.faq-two__input-box input[type="email"] {
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--AutoCareX-bdr-color);
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+    font-size: 16px;
+    color: var(--AutoCareX-gray);
+    display: block;
+    font-weight: 400;
+    border-radius: 30px;
+    line-height: 60px;
+}
+
+.faq-two__input-box .select-box .nice-select {
+    background-color: transparent;
+    border: 1px solid var(--AutoCareX-bdr-color);
+    border-radius: 30px;
+    color: var(--AutoCareX-gray);
+    font-size: 16px;
+    font-weight: 400;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.faq-two__input-box .select-box .nice-select:after {
+    position: absolute;
+    top: 47%;
+    right: 30px;
+    border-bottom: 1px solid var(--AutoCareX-base);
+    border-right: 1px solid var(--AutoCareX-base);
+}
+
+.faq-two__input-box textarea {
+    position: relative;
+    height: 135px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--AutoCareX-bdr-color);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+    font-size: 16px;
+    color: var(--AutoCareX-gray);
+    display: block;
+    font-weight: 400;
+    border-radius: 20px;
+    margin-bottom: 0;
+}
+
+.faq-two__input-box.text-message-box {
+    height: 135px;
+    margin-bottom: 30px;
+}
+
+.faq-two__btn-box {
+    position: relative;
+    display: block;
+}
+
+.faq-two__btn-box .thm-btn {
+    border: 0;
+    padding: 13px 65px 13px;
+}
+
+
+/*--------------------------------------------------------------
+# FAQ Three
+--------------------------------------------------------------*/
+.faq-three {
+    position: relative;
+    display: block;
+    padding: 120px 0 0;
+    z-index: 1;
+}
+
+.faq-three__left {
+    position: relative;
+    display: block;
+}
+
+.faq-three__left .section-title-two {
+    margin-bottom: 47px;
+}
+
+.faq-three__img {
+    position: relative;
+    display: block;
+}
+
+.faq-three__img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.faq-three__right {
+    position: relative;
+    display: block;
+}
+
+.faq-three__right .faq-one-accrodion .accrodion {
+    position: relative;
+    display: block;
+    border: 1px solid var(--AutoCareX-bdr-color);
+    background-color: transparent;
+    border-radius: 30px;
+    overflow: hidden;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.faq-three__right .faq-one-accrodion .accrodion-title {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 16px 30px 16px;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+.faq-three__right .faq-one-accrodion .accrodion-title h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: var(--AutoCareX-black);
+    position: relative;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.faq-three__right .faq-one-accrodion .accrodion+.accrodion {
+    margin-top: 30px;
+}
+
+.faq-three__right .faq-one-accrodion .accrodion-title h4::before {
+    content: "\e91f";
+    font-family: 'icomoon' !important;
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--AutoCareX-base);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    line-height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--AutoCareX-white);
+}
+
+.faq-three__right .faq-one-accrodion .accrodion.active .accrodion-title h4::before {
+    content: "\e91a";
+    color: var(--AutoCareX-white);
+    background-color: var(--AutoCareX-base);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-three__right .faq-one-accrodion .accrodion-content {
+    position: relative;
+    padding-bottom: 18px;
+    margin-top: 4px;
+    padding-left: 30px;
+    padding-right: 140px;
+    border-radius: 20px;
+}
+
+.faq-three__right .faq-one-accrodion .accrodion-content p {
+    margin: 0;
+}
+
+
+/*--------------------------------------------------------------
+# faq four
+--------------------------------------------------------------*/
+.faq-four .faq-one-accrodion .accrodion {
+    border: 1px solid var(--AutoCareX-bdr-color);
+}
+
+.faq-four .faq-one-accrodion .accrodion-content {
+    border-bottom: 3px solid var(--AutoCareX-base);
+}
+
+.faq-four .faq-one-accrodion .accrodion.active {
+    background-color: #F4F4F4;
+}
+
+/*--------------------------------------------------------------
+# Faq Page
+--------------------------------------------------------------*/
+.faq-page {
+    position: relative;
+    display: block;
+    padding: 120px 0 100px;
+}
+
+.faq-page__single {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.faq-page .faq-one-accrodion .accrodion {
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    background-color: rgba(var(--AutoCareX-bdr-color-rgb), .50);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.faq-page .faq-one-accrodion .accrodion-title {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 19px 30px 16px;
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+    padding-right: 25px;
+}
+
+.faq-page .faq-one-accrodion .accrodion-title h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+    color: var(--AutoCareX-black);
+    text-transform: capitalize;
+    position: relative;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.faq-page .faq-one-accrodion .accrodion+.accrodion {
+    margin-top: 20px;
+}
+
+.faq-page .faq-one-accrodion .accrodion-title h4::before {
+    content: "\e91f";
+    font-family: 'icomoon' !important;
+    font-weight: 700;
+    font-size: 13px;
+    color: var(--AutoCareX-base);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    line-height: 13px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    text-align: center;
+}
+
+.faq-page .faq-one-accrodion .accrodion.active .accrodion-title h4::before {
+    content: "\e91a";
+}
+
+.faq-page .faq-one-accrodion .accrodion-content {
+    position: relative;
+    padding-bottom: 32px;
+    padding-left: 30px;
+    padding-right: 50px;
+    margin-top: 12px;
+}
+
+.faq-page .faq-one-accrodion .accrodion-content p {
+    margin: 0;
+}
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

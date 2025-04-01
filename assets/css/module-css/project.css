@@ -1,0 +1,314 @@
+/*==============================================
+   Project Details
+===============================================*/
+.project-details {
+    position: relative;
+    display: block;
+    padding: 120px 0 120px;
+    z-index: 1;
+}
+
+.project-details__top {
+    position: relative;
+    display: block;
+}
+
+.project-details__top-left {
+    position: relative;
+    display: block;
+}
+
+.project-details__img-1 {
+    position: relative;
+    display: block;
+}
+
+.project-details__img-1 img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.project-details__information-box {
+    position: relative;
+    display: block;
+    border: 1px solid var(--AutoCareX-bdr-color);
+    border-radius: 20px;
+    padding: 36px 39px 40px;
+}
+
+.project-details__information-title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 46px;
+    text-transform: capitalize;
+}
+
+.project-details__information-text {
+    margin-top: 13px;
+    margin-bottom: 18px;
+}
+
+.project-details__information-list {
+    position: relative;
+    display: block;
+}
+
+.project-details__information-list li {
+    position: relative;
+    display: block;
+    border-bottom: 1px solid var(--AutoCareX-bdr-color);
+    padding-bottom: 7px;
+}
+
+.project-details__information-list li+li {
+    margin-top: 28px;
+}
+
+.project-details__information-list li p {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    font-family: var(--AutoCareX-font-two);
+    color: var(--AutoCareX-black);
+}
+
+.project-details__information-list li p span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    font-family: var(--AutoCareX-font);
+    margin-left: 5px;
+    color: var(--AutoCareX-gray);
+}
+
+.project-details__information-social-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.project-details__information-social-box span {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    font-family: var(--AutoCareX-font-two);
+    color: var(--AutoCareX-black);
+}
+
+.project-details__information-social {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.project-details__information-social a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #F4F4F4;
+    border-radius: 50%;
+    font-size: 18px;
+    color: var(--AutoCareX-black);
+}
+
+.project-details__information-social a:hover {
+    background-color: var(--AutoCareX-base);
+    color: var(--AutoCareX-white);
+}
+
+.project-details__content {
+    position: relative;
+    display: block;
+    margin-top: 30px;
+}
+
+.project-details__title-1 {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 55px;
+}
+
+.project-details__text-1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.project-details__points-and-img {
+    position: relative;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 27px;
+}
+
+.project-details__points-box {
+    position: relative;
+    display: block;
+    margin-top: 50px;
+}
+
+.project-details__points {
+    position: relative;
+    display: block;
+}
+
+.project-details__points li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.project-details__points li+li {
+    margin-top: 20px;
+}
+
+.project-details__points li .icon {
+    position: relative;
+    display: inline-block;
+}
+
+.project-details__points li .icon span {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    color: var(--AutoCareX-base);
+}
+
+.project-details__points-img {
+    position: relative;
+    display: block;
+}
+
+.project-details__points-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.project-details__title-2 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 46px;
+    margin-bottom: 13px;
+}
+
+.project-details__prev-next {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--AutoCareX-black);
+    border-radius: 20px;
+    padding: 20px 30px 20px;
+    margin-top: 35px;
+}
+
+.project-details__prev-next::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    width: 1px;
+    height: 50px;
+    background-color: var(--AutoCareX-bdr-color);
+    transform: translateX(-50%);
+}
+
+.project-details__prev {
+    position: relative;
+    display: block;
+}
+
+.project-details__prev a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    font-family: var(--AutoCareX-font-two);
+    color: var(--AutoCareX-white);
+}
+
+.project-details__prev a span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid var(--AutoCareX-base);
+    border-radius: 50%;
+    font-size: 16px;
+    color: var(--AutoCareX-white);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.project-details__prev a:hover span {
+    background-color: var(--AutoCareX-base);
+    color: var(--AutoCareX-white);
+}
+
+.project-details__next {
+    position: relative;
+    display: block;
+}
+
+.project-details__next a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+    font-family: var(--AutoCareX-font-two);
+    color: var(--AutoCareX-white);
+}
+
+.project-details__next a span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid var(--AutoCareX-base);
+    border-radius: 50%;
+    font-size: 16px;
+    color: var(--AutoCareX-white);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.project-details__next a:hover span {
+    background-color: var(--AutoCareX-base);
+    color: var(--AutoCareX-white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

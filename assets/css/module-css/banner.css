@@ -1,0 +1,216 @@
+/*--------------------------------------------------------------
+# Banner One
+--------------------------------------------------------------*/
+.banner-one {
+    position: relative;
+    display: block;
+    background-color: var(--AutoCareX-white);
+    overflow: hidden;
+    padding: 55px 0 0;
+    z-index: 1;
+}
+
+.banner-one__inner {
+    position: relative;
+    display: block;
+}
+
+.banner-one__title-box {
+    position: relative;
+    display: block;
+    text-align: center;
+    z-index: 3;
+}
+
+.banner-one__title {
+    font-weight: 700;
+    font-size: 84px;
+    line-height: 94px;
+    letter-spacing: -1.48px;
+    margin-bottom: 43px;
+}
+
+.banner-one__title span {
+    font-weight: 400;
+}
+
+.banner-one__video-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.banner-one__video-link {
+    position: relative;
+    display: block;
+}
+
+.banner-one__video-icon {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: var(--AutoCareX-base);
+    background-color: transparent;
+    border: 2px solid var(--AutoCareX-base);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.banner-one__video-icon:hover {
+    background-color: var(--AutoCareX-base);
+    color: var(--AutoCareX-white);
+}
+
+.banner-one__video-link .ripple,
+.banner-one__video-icon .ripple:before,
+.banner-one__video-icon .ripple:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -ms-box-shadow: 0 0 0 0 rgba(var(--AutoCareX-base-rgb), 0.6);
+    -o-box-shadow: 0 0 0 0 rgba(var(--AutoCareX-base-rgb), 0.6);
+    -webkit-box-shadow: 0 0 0 0 rgba(var(--AutoCareX-base-rgb), 0.6);
+    box-shadow: 0 0 0 0 rgba(var(--AutoCareX-base-rgb), 0.6);
+    -webkit-animation: ripple 3s infinite;
+    animation: ripple 3s infinite;
+}
+
+.banner-one__video-icon .ripple:before {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+    content: "";
+    position: absolute;
+}
+
+.banner-one__video-icon .ripple:after {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+    content: "";
+    position: absolute;
+}
+
+.banner-one__video-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+}
+
+.banner-one__img-box {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: -15px;
+    z-index: 1;
+}
+
+.banner-one__img-box:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -870px;
+    height: 1290px;
+    background: linear-gradient(90deg, rgba(232, 9, 46, 0.8) 0%, rgba(232, 9, 46, 0) 97.93%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.banner-one__img {
+    position: relative;
+    display: block;
+}
+
+.banner-one__img img {
+    width: auto;
+    animation: topBottom 3s ease-in-out infinite;
+}
+
+.banner-one__designer-and-developer {
+    position: absolute;
+    top: 206px;
+    left: 0;
+}
+
+.banner-one__designer-and-developer-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--AutoCareX-black);
+    line-height: 30px;
+    margin-bottom: 19px;
+}
+
+.banner-one__designer-and-developer-list {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.banner-one__designer-and-developer-list li {
+    position: relative;
+    display: block;
+}
+
+.banner-one__designer-and-developer-list li+li {
+    margin-left: -12px;
+}
+
+.banner-one__designer-and-developer-img {
+    position: relative;
+    display: block;
+    width: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.banner-one__designer-and-developer-img img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--AutoCareX-white);
+}
+
+.banner-one__text {
+    font-size: 18px;
+    line-height: 28px;
+    position: absolute;
+    top: 290px;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/
