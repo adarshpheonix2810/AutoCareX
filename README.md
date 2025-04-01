@@ -26,7 +26,7 @@ A responsive blog template for an automotive service website, featuring detailed
 Customize the content in the HTML files to fit your needs. Add your own blog posts and modify styles as necessary.
 
 ## Live Demo
-Visit the live demo at [AutoCareX](https://AutoCareX.vercel.app)
+Visit the live demo at [AutoCareX](autocarexclone.netlify.app)
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
