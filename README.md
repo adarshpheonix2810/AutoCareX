@@ -13,6 +13,7 @@ A responsive blog template for an automotive service website, featuring detailed
 ## Technologies Used
 - HTML
 - CSS
+- javascript
 - Bootstrap
 
 ## Installation
